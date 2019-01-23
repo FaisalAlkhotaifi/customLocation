@@ -13,6 +13,8 @@
 		151B36D021EB84860056AB79 /* TechCampusLocations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 151B36CE21EB84860056AB79 /* TechCampusLocations.xcdatamodeld */; };
 		151B36D221EB84860056AB79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151B36D121EB84860056AB79 /* Assets.xcassets */; };
 		151B36D521EB84860056AB79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151B36D321EB84860056AB79 /* LaunchScreen.storyboard */; };
+		1531499121F46B48004EB69F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1531499021F46B48004EB69F /* CoreLocation.framework */; };
+		8DE26CF5DC7D3CF4B0F6FFEC /* Pods_TechCampusLocations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413DFE65814E4D5EE08A4ACE /* Pods_TechCampusLocations.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,11 @@
 		151B36D121EB84860056AB79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		151B36D421EB84860056AB79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		151B36D621EB84860056AB79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1531498C21F3BB13004EB69F /* TechCampusLocations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TechCampusLocations; sourceTree = "<group>"; };
+		1531499021F46B48004EB69F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2977DB0BAB209625D6AE51D9 /* Pods-TechCampusLocations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCampusLocations.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechCampusLocations/Pods-TechCampusLocations.release.xcconfig"; sourceTree = "<group>"; };
+		413DFE65814E4D5EE08A4ACE /* Pods_TechCampusLocations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechCampusLocations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A89AF5558A2670B7CED31681 /* Pods-TechCampusLocations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCampusLocations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechCampusLocations/Pods-TechCampusLocations.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1531499121F46B48004EB69F /* CoreLocation.framework in Frameworks */,
+				8DE26CF5DC7D3CF4B0F6FFEC /* Pods_TechCampusLocations.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				151B36C621EB84860056AB79 /* TechCampusLocations */,
 				151B36C521EB84860056AB79 /* Products */,
+				A4EBA59C8E54650208D0D82F /* Pods */,
+				4A2FDF703EDAC5C4CEB5DFA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +78,25 @@
 			path = TechCampusLocations;
 			sourceTree = "<group>";
 		};
+		4A2FDF703EDAC5C4CEB5DFA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1531499021F46B48004EB69F /* CoreLocation.framework */,
+				1531498C21F3BB13004EB69F /* TechCampusLocations */,
+				413DFE65814E4D5EE08A4ACE /* Pods_TechCampusLocations.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4EBA59C8E54650208D0D82F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A89AF5558A2670B7CED31681 /* Pods-TechCampusLocations.debug.xcconfig */,
+				2977DB0BAB209625D6AE51D9 /* Pods-TechCampusLocations.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 151B36D921EB84860056AB79 /* Build configuration list for PBXNativeTarget "TechCampusLocations" */;
 			buildPhases = (
+				F704A0C38A9B22B18A9DC3BF /* [CP] Check Pods Manifest.lock */,
 				151B36C021EB84860056AB79 /* Sources */,
 				151B36C121EB84860056AB79 /* Frameworks */,
 				151B36C221EB84860056AB79 /* Resources */,
+				C86418A5CD8FCC1AA359D176 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +164,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C86418A5CD8FCC1AA359D176 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TechCampusLocations/Pods-TechCampusLocations-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TechCampusLocations/Pods-TechCampusLocations-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F704A0C38A9B22B18A9DC3BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechCampusLocations-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		151B36C021EB84860056AB79 /* Sources */ = {
@@ -284,6 +357,7 @@
 		};
 		151B36DA21EB84860056AB79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A89AF5558A2670B7CED31681 /* Pods-TechCampusLocations.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,7 +367,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = razan.TechCampusLocations;
+				PRODUCT_BUNDLE_IDENTIFIER = com.razan.TechCampusLocations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,6 +376,7 @@
 		};
 		151B36DB21EB84860056AB79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2977DB0BAB209625D6AE51D9 /* Pods-TechCampusLocations.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,7 +386,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = razan.TechCampusLocations;
+				PRODUCT_BUNDLE_IDENTIFIER = com.razan.TechCampusLocations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
